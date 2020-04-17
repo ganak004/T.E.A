@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tea.todo">
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+    <!-- Homebutton containing the application icon. Placed in the corner of the screen. -->
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Your Todo List"
+        android:textColor="#1976D2"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+    <!-- The title of the activity in blue at the top of the activity with centre alignment and in bold -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent">
+        <!--The space between the edge of the screen and the navigation bar is 8dp.
+        Orientation of the linear layout (the navigation bar is horizontal)-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Search"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+                       text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/timer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Timer"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+               text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/advice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Advice"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+                       text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/todo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="To Do List"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+               text being white. The text within the button indicates where the button will take the user.-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="363dp"
+        android:layout_height="476dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".todo">
+
+        <ListView
+            android:id="@+id/lvItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnAddItem"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" />
+        <!-- A list view is within the relative layout with the id lv1Items with a center gravity.-->
+        <EditText
+            android:id="@+id/etNewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/btnAddItem"
+            android:layout_toLeftOf="@+id/btnAddItem"
+            android:layout_toStartOf="@+id/btnAddItem"
+            android:hint="Enter a new item" />
+        <!-- An edit text is within the relative layout with the id etNewItem with "Enter new items" as a shadow text-->
+
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onAddItem"
+            android:text="Add Item" />
+        <!-- A button for the user to use click on to add teh item to the to-do list-->
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

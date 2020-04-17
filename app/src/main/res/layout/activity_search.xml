@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tea.Search">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Useful Websites"
+        android:textColor="#1976D2"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+    <!-- The title of the activity in blue at the top of the activity with centre alignment and in bold -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985">
+        <!--The space between the edge of the screen and the navigation bar is 8dp.
+Orientation of the linear layout (the navigation bar is horizontal)-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:textColor="#ffff"
+            android:text="Search" />
+        <!-- The id is given to the button. The background of the button is blue with the
+    text being white. The text within the button indicates where the button will take the user.-->
+
+
+        <Button
+            android:id="@+id/timer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:textColor="#ffff"
+            android:text="Timer" />
+        <!-- The id is given to the button. The background of the button is blue with the
+    text being white. The text within the button indicates where the button will take the user.-->
+
+
+        <Button
+            android:id="@+id/advice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:textColor="#ffff"
+            android:text="Advice" />
+        <!-- The id is given to the button. The background of the button is blue with the
+    text being white. The text within the button indicates where the button will take the user.-->
+
+
+        <Button
+            android:id="@+id/todo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:textColor="#ffff"
+            android:text="To Do List" />
+        <!-- The id is given to the button. The background of the button is blue with the
+    text being white. The text within the button indicates where the button will take the user.-->
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+    <!-- Homebutton containing the application icon. Placed in the corner of the screen. -->
+
+
+    <Button
+        android:id="@+id/KhanAbutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:background="#1E88E5"
+        android:text="Khan Academy"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <Button
+        android:id="@+id/WolframAbutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Wolfram Alpha"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.295" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <Button
+        android:id="@+id/Sparknotesbutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Sparknotes"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <Button
+        android:id="@+id/Dictionarybutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Dictionary.com"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <Button
+        android:id="@+id/WordRbutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Word Reference"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <Button
+        android:id="@+id/Googlebutton"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Google"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808" />
+    <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="369dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="A website with useful videos to help you revise for every subject (GCSE and A-Levels) "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="356dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="A website to help you with solving mathematical equations (GCSE and A-levels)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="388dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="A website to help you with the books and poetry you are reading in school (GCSE and A-Levels)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:text="An online dictionary (GCSE and A-Levels)"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:text="An online translator (GCSE and A-Levels)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="365dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="A search engine to search up any question or topic (GCSE and A-Levels)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+    <!-- Text explaining each website. This is in black with center alignment -->
+
+
+</android.support.constraint.ConstraintLayout>

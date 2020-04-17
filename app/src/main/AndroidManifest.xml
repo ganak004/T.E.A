@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.tea">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    //to allow internet access to the application
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="T.E.A."
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".homepage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                    //the activity that the appication is going to start up with
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".advice" />
+        <activity android:name=".todo" />
+        <activity android:name=".pomodoro" />
+        <activity android:name=".Search" />
+        <activity android:name=".gcse_advice" />
+        <activity android:name=".alevel_advice" />
+        <activity android:name=".Pomo_Timer" />
+        <activity android:name=".KhanA" />
+        <activity android:name=".WolframA" />
+        <activity android:name=".Sparknotes" />
+        <activity android:name=".Dictionary" />
+        <activity android:name=".WordR" />
+        <activity android:name=".Google">
+            //the activities within the application
+        </activity>
+    </application>
+
+</manifest>

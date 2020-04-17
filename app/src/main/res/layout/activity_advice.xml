@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.tea.advice">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985">
+
+        <!--The space between the edge of the screen and the navigation bar is 8dp.
+ Orientation of the linear layout (the navigation bar is horizontal)-->
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Search"
+            android:textColor="#ffffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/timer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Timer"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/advice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="Advice"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+
+        <Button
+            android:id="@+id/todo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1976D2"
+            android:text="To Do List"
+            android:textColor="#ffff" />
+        <!-- The id is given to the button. The background of the button is blue with the
+        text being white. The text within the button indicates where the button will take the user.-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="General Advice"
+        android:textColor="#1976D2"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+    <!-- The title of the program in blue at the top of the activity with centre alignment and in bold -->
+
+
+    <ScrollView
+        android:layout_width="355dp"
+        android:layout_height="390dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.379">
+        <!-- The size of the scroll view and teh margins between the edge of the screen and the scroll view. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- The orientation is vertical so the user scrolls down and not across to view the text. -->
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:text="Talk to the teachers.If you don't understand anything during the lesson ask the teacher and/or your friends.
+                Set up a homework-friendly area. Make sure it is well-lit to make it a comfortable environment for you to work in.
+                Keep supplies — paper, pencils, glue, scissors — within reach.
+                Schedule a regular study time. Know when you are more likely to be productive- morning, after lunch, evenings or nights. On heavy homework nights. break up the work into manageable chunks.
+                Create a work schedule for the night if necessary — and take time for a 15-minute break every hour (or use the pomodoro timer provided on this app), if possible.
+                Keep distractions to a minimum. This means no TV, loud music, or phone calls. (Occasionally, though, a phone call to a classmate about an assignment can be helpful.)
+                Make sure you do your own work. You won't learn if you don't think for yourselves and make your own mistakes.
+                Test yourself after revising a topic or subject.
+                Review your work regularly so you do not forget the content. Reward yourself after completing some revision or some work." />
+            <!-- The text with in the scroll view that is specific to the type of advice within each activity. -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/alevel_button"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="A-Level Advice"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+    <!-- Button in blue with white text to take the user to the alevel activity -->
+
+
+    <Button
+        android:id="@+id/gcse_button"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#1E88E5"
+        android:text="Gcse Advice"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <!-- Button in blue with white text to take the user to the gcse activity -->
+
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+    <!-- Homebutton containing the application icon. Placed in the corner of the screen. -->
+
+
+
+</android.support.constraint.ConstraintLayout>
